@@ -69,7 +69,7 @@ pip install fastapi uvicorn python-multipart
 The model is hosted on HuggingFace Hub. Download it by running this in Python:
 ```python
 from huggingface_hub import snapshot_download
-snapshot_download(repo_id="TeryyPotato/flan-t5-sentiment", local_dir="./flan-t5-sentiment-model")
+snapshot_download(repo_id="TerryPotato/sentiment-analysis-ai", local_dir="./flan-t5-sentiment-model")
 ```
 
 ### 5. Start the server
