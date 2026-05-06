@@ -16,7 +16,7 @@ app.add_middleware(
 
 # Cargar modelo
 print("⏳ Loading model...")
-MODEL_PATH = "./flan-t5-sentiment-model"
+MODEL_PATH = "./flan-t5-small-sentiment-model"
 tokenizer = T5Tokenizer.from_pretrained(MODEL_PATH)
 model = T5ForConditionalGeneration.from_pretrained(MODEL_PATH, torch_dtype=torch.float32)
 model = model.to("cuda")
